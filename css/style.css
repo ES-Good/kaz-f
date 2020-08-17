@@ -20,6 +20,7 @@ body{
   font-weight: 100;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #f4f2f2;
 }
 
 .header{
@@ -37,14 +38,16 @@ body{
 .logo:focus{
   outline: none;
 }
-.padding-left{
-  padding-left: 50px;
-}
 
 .logo{
   text-decoration: none;
   margin: 10px 0;
   width: 300px;
+  order: 0;
+}
+
+.header-box-title{
+  order: 1;
 }
 
 .logo img{
@@ -135,6 +138,7 @@ body{
   font-weight: bold;
   color: #fff;
   padding: 10px 20px;
+  order: 2;
 }
 
 

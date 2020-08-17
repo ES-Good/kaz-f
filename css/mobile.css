@@ -1,0 +1,105 @@
+@media (max-width: 1490px){
+    .container{
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 1350px){
+    .card{
+        margin-right: 10px;
+    }
+    .btn{
+        font-size: 16px;
+        width: 98%;
+        height: 90px;
+
+    }
+    .main-title{
+        font-size: 22px;
+    }
+    .title-header{
+        font-size: 28px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    .btn-header{
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+    .logo{
+        width: 260px;
+    }
+}
+
+@media (max-width: 1190px){
+    .card{
+        flex-basis: 260px;
+    }
+    .title-header{
+        font-size: 26px;
+    }
+    .btn-header{
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+    .logo{
+        width: 230px;
+    }
+    .main-title {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .title-box{
+        width: 350px;
+        height: 350px;
+    }
+    .title-box__title {
+        font-size: 26px;
+    }
+    .title-box__subtitle{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1110px){
+    .card {
+        flex-basis: 220px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .ico-box p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px){
+    .title-header {
+        font-size: 22px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .logo {
+        width: 210px;
+    }
+    .btn-header{
+        padding: 4px 14px;
+    }
+    .main-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 950px){
+    .card {
+        flex-basis: 200px;
+    }
+}
+
+@media (max-width: 870px){
+
+}

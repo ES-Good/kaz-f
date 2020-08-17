@@ -101,5 +101,10 @@
 }
 
 @media (max-width: 870px){
-
+    .btn-header{
+        order: 1;
+    }
+    .header-box-title{
+        order: 2;
+    }
 }

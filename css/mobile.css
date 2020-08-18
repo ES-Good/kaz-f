@@ -106,5 +106,20 @@
     }
     .header-box-title{
         order: 2;
+        margin: 20px auto;
     }
+    .title-header {
+        font-size: 26px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .card-box{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 620px){
+
 }

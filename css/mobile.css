@@ -121,5 +121,40 @@
 }
 
 @media (max-width: 620px){
+    .ico-box{
+        width: 80px;
+    }
+    .title-box{
+        animation: none;
+        box-shadow: 0 0 15px red;
+    }
+}
 
+@media (max-width: 660px){
+    .card-box{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 578px){
+    .title-header{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 570px){
+    .ico-box{
+        width: 50%;
+    }
+    .footer{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px){
+    .card {
+        flex-basis: 100%;
+    }
 }

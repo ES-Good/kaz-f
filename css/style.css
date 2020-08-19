@@ -166,7 +166,7 @@ body{
   right: 0;
   left: 0;
   position: absolute;
-  height: 100vh;
+  height: 100%;
   z-index: 99;
 }
 
@@ -314,6 +314,7 @@ body{
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  width: 100px;
 }
 
 .ico-box p {

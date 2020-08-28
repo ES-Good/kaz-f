@@ -64,18 +64,6 @@
     }
 }
 
-@media (max-width: 1110px){
-    .card {
-        flex-basis: 220px;
-    }
-    .btn{
-        font-size: 14px;
-    }
-    .ico-box p{
-        font-size: 14px;
-    }
-}
-
 @media (max-width: 1024px){
     .title-header {
         font-size: 22px;
@@ -91,6 +79,18 @@
     }
     .main-title {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 1110px){
+    .card {
+        flex-basis: 220px;
+    }
+    .ico-box p{
+        font-size: 14px;
+    }
+    .btn__text{
+        font-size: 14px;
     }
 }
 

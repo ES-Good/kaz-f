@@ -125,6 +125,10 @@ body{
   box-shadow: 0px 0px 0px #0d8ebd;
 }
 
+.btn-bg{
+  background-color: #523e34;
+}
+
 .btn-header{
   font-size: 18px;
   border-radius: 15px;

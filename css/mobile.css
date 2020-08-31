@@ -98,6 +98,20 @@
     .card {
         flex-basis: 200px;
     }
+    .btn svg {
+        width: 35%;
+        height: 40px;
+    }
+    .btn__text {
+        font-size: 13px;
+    }
+    .title-box {
+        width: 320px;
+        height: 320px;
+    }
+    .politics{
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 870px){
@@ -169,6 +183,9 @@
     .mobile-phone{
         display: block;
         width: 50px;
+    }
+    .btn__text {
+        font-size: 15px;
     }
 }
 

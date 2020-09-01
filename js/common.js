@@ -3,13 +3,13 @@ const form = document.querySelector('.form');
 const closeForm = document.querySelector('.close-form');
 let titleForm = document.querySelector('.title-form')
 
-if (window.innerWidth <= 576) {
+if (window.innerWidth <= 450) {
   for (let i = 0; i < card.length; i++) {
     card[i].onclick = function (){
       showMobileForm(i, this.firstElementChild.innerText);
     }
   }
-}else if(window.innerWidth > 576){
+}else if(window.innerWidth > 450){
   for (let i = 0; i < card.length; i++) {
     card[i].onclick = function (){
       showForm(this.firstElementChild.innerText);

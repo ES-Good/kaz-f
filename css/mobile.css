@@ -177,7 +177,7 @@
 
 @media (max-width: 450px){
     .card {
-        flex-basis: 100%;
+        flex-basis: 95%;
     }
     .btn-header{
         display: none;
@@ -187,17 +187,7 @@
         width: 50px;
     }
     .btn__text {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 450px){
-    .card{
-        flex-basis: 75%;
-    }
-    .btn{
-        font-size: 20px;
-        height: 80px;
+        font-size: 18px;
     }
 }
 
@@ -214,5 +204,14 @@
     }
     .form{
         width: 320px;
+    }
+    .btn-form{
+        font-size: 14px;
+    }
+    .btn-close-form{
+        left: 10px;
+    }
+    .btn-submit{
+        right: 10px;
     }
 }

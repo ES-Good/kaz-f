@@ -75,19 +75,61 @@ body{
   outline: none;
 }
 
-.btn-submit{
-  display: block;
-  margin: 0 auto;
+.btn-form{
   outline: none;
-  background: green;
-  border: navajowhite;
   padding: 10px;
   font-size: 16px;
-  border-radius: 20px 20px 0 0;
   box-shadow: 0 0 5px #000;
+  border-radius: 20px 20px 0 0;
+  border: navajowhite;
   cursor: pointer;
-  font-family: Montserrat-Light;
+  position: absolute;
+  bottom: 0;
 }
+
+.btn-submit{
+  display: block;
+  background: #ef3124;
+  font-family: Montserrat-Light;
+  right: 30px;
+}
+
+.btn-close-form{
+  background-color: #523e34;
+  color: #989696;
+  left: 30px;
+}
+
+.cross{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+
+.cross:before,
+.cross:after{
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background-color: #523e34;
+  border-radius: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cross:before{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross:after{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 
 .card{
   width: 240px;
@@ -181,7 +223,7 @@ body{
   position: relative;
   z-index: 1;
   width: 400px;
-  padding: 5px 5px 0 5px;
+  padding: 5px 5px 70px 5px;
   margin: 0 auto;
   top: -50%;
   transform: translateY(-50%);
@@ -309,6 +351,7 @@ body{
 .title-form{
   text-align: center;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 .show-close-form{

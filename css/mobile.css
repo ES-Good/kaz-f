@@ -152,7 +152,6 @@
         width: 80px;
     }
     .title-box{
-        animation: none;
         box-shadow: 0 0 15px red;
     }
 }

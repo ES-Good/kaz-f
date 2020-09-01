@@ -36,7 +36,7 @@ function showMobileForm(num, title){
 }
 
 function showForm(title) {
-  titleForm.innerText = title + ' ' + '?';
+  titleForm.innerText = title;
   closeForm.classList.add('close-form-show');
   setTimeout(function () {
     form.style.top = '50%';
@@ -44,7 +44,7 @@ function showForm(title) {
 }
 
 document.onclick = function (event) {
-  if (event.target.classList.contains('close-form')) {
+  if (event.target.classList.contains('close-form') || event.target.classList.contains('btn-close-form')) {
     form.style.top = '-50%';
     setTimeout(function () {
       closeForm.classList.remove('close-form-show');

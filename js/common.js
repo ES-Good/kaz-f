@@ -1,6 +1,8 @@
 const card = document.querySelectorAll('.card');
 const form = document.querySelector('.form');
 const closeForm = document.querySelector('.close-form');
+let radioCity = document.querySelectorAll('.radio-city');
+let radioTextCity = document.querySelectorAll('.redio-text')
 let titleForm = document.querySelector('.title-form')
 
 if (window.innerWidth <= 576) {
@@ -48,8 +50,17 @@ document.querySelector('.btn-close-form').onclick = function(){
      setTimeout(function () {
        closeForm.classList.remove('close-form-show');
      }, 500)
-
 }
+
+document.querySelector('.btn-form-cities').onclick = function (){
+  form.classList.add('form-show-citys');
+  document.querySelector('.form-cities-container').classList.add('show-form-cities-container');
+  for (let i = 0; i < radioCity.length; i++) {
+      radioCity[i].classList.add('show-city-radio');
+      radioTextCity[i].classList.add('show-city-text');
+  }
+}
+
 // document.onclick = function (event) {
 //   if (event.target.classList.contains('btn-close-form')) {
 //     form.style.top = '-50%';

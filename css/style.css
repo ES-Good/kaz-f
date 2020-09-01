@@ -91,7 +91,7 @@ body{
 .form-cities-container{
   background-color: #523e34;
   width: 100%;
-  height: 250px;
+  height: 2px;
   position: absolute;
   left: 0;
   bottom: 60px;
@@ -103,7 +103,9 @@ body{
   padding: 0 30px;
 }
 
-
+.show-form-cities-container{
+  height: 250px;
+}
 
 .btn-form{
   outline: none;
@@ -263,7 +265,10 @@ body{
   top: -50%;
   transform: translateY(-50%);
   box-shadow: 0 0 20px #000;
-  height: 590px;
+}
+
+.form-show-citys{
+  padding: 18px 5px 340px 5px;
 }
 
 .form-show{
@@ -449,13 +454,24 @@ body{
 
 label{
   display: inline-block;
-  font-size: 22px;
+  font-size: 0px;
   margin: 3px 0;
   color: #fff;
+  transition: all 1s;
 }
 
 label input{
+  width: 0px;
+  height: 0px;
+  margin-right: 5px;
+  transition: all 1s;
+}
+
+.show-city-text{
+  font-size: 22px;
+}
+
+.show-city-radio{
   width: 15px;
   height: 15px;
-  margin-right: 5px;
 }

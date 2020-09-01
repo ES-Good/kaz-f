@@ -85,6 +85,8 @@ body{
   cursor: pointer;
   position: absolute;
   bottom: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-submit{

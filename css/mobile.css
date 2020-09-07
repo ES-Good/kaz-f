@@ -191,7 +191,7 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 420px){
     .title-box{
         width: 300px;
         height: 300px;
@@ -213,5 +213,14 @@
     }
     .btn-submit{
         right: 10px;
+    }
+}
+
+@media (max-width: 340px){
+    .btn-form{
+        padding: 7px;
+    }
+    .form{
+        width: 303px;
     }
 }

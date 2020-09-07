@@ -45,12 +45,8 @@ function showForm(title) {
   },50);
 }
 
-document.querySelector('.btn-close-form').onclick = function(){
-     form.style.top = '-50%';
-     setTimeout(function () {
-       closeForm.classList.remove('close-form-show');
-     }, 500)
-}
+document.querySelector('.btn-close-form').addEventListener('click', closeFormShow);
+document.querySelector('.cross').addEventListener('click', closeFormShow);
 
 document.querySelector('.btn-form-cities').onclick = function (){
   form.classList.add('form-show-citys');
@@ -61,11 +57,9 @@ document.querySelector('.btn-form-cities').onclick = function (){
   }
 }
 
-// document.onclick = function (event) {
-//   if (event.target.classList.contains('btn-close-form')) {
-//     form.style.top = '-50%';
-//     setTimeout(function () {
-//       closeForm.classList.remove('close-form-show');
-//     }, 500)
-//   }
-// }
+function closeFormShow (){
+  form.style.top = '-50%';
+  setTimeout(function () {
+    closeForm.classList.remove('close-form-show');
+  }, 500)
+}

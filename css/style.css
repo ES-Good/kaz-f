@@ -16,12 +16,12 @@
 
 body{
   background-image: url(../img/background/background.jpeg);
-  position: relative;
   font-family: Montserrat-Light;
   font-weight: 100;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f4f2f2;
+  position: relative;
 }
 
 .header{
@@ -283,8 +283,9 @@ body{
   background: rgba(0, 0, 0, 0.3);
   right: 0;
   left: 0;
+  top: 0;
+  bottom: 0;
   position: absolute;
-  height: 100%;
   z-index: 99;
 }
 

@@ -104,12 +104,13 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   flex-direction: column;
   padding: 0 30px;
 }
 
 .show-form-cities-container{
-  height: 250px;
+  height: 280px;
 }
 
 .btn-form{
@@ -476,13 +477,15 @@ body{
   background: #ef3124;
   text-align: center;
   padding: 0 0;
-  font-size: 0;
   border-radius: 10px;
   color: #fff;
+  font-size: 0;
   letter-spacing: 2px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.5s;
+  width: 270px;
+  box-shadow: -3px 3px 0 0 #000;
 }
 
 .btn-city-show{

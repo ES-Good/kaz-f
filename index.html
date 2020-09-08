@@ -12,14 +12,23 @@
   <div class="close-form">
     <form action="#" class="form">
       <div class="cross">
-        
+
       </div>
       <h2 class="title-form"></h2>
-      <input class="input-form" type="number" placeholder="Сумма" min="100000" step="50000" type="text" name="sum-credit" id="" required>
-      <input class="input-form" type="text" placeholder="ФИО" name="full-name" id="" pattern="^[А-Яа-яЁё\s]+$" required>
-      <input class="input-form" id="tel" type="tel" name="tel" placeholder="+7 (___)___-__-__"  maxlength="12" required>
-      <div class="city">
-        <p class="city__text">Ваш город:</p>
+      <div class="input-container">
+        <p class="input__text">Сумма кредита:</p>
+        <input class="input-form" type="number" placeholder="100000" min="100000" step="50000" type="text" name="sum-credit" id="" required>
+      </div>
+      <div class="input-container">
+        <p class="input__text">ФИО:</p>
+        <input class="input-form" type="text" placeholder="Иванов Иван Иванович" name="full-name" id="" pattern="^[А-Яа-яЁё\s]+$" required>
+      </div>
+      <div class="input-container">
+        <p class="input__text">Номер телефона:</p>
+        <input class="input-form" id="tel" type="tel" name="tel" placeholder="+7 (___)___-__-__" minlength="12" maxlength="12" required>
+      </div>
+      <div class="input-container">
+        <p class="input__text">Ваш город:</p>
         <input type="text" class="input-form input-form_city" name="city-name" id="" value="Самара" readonly>
       </div>
       <div class="form-cities-container">

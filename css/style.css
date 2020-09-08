@@ -101,12 +101,17 @@ body{
   left: 0;
   bottom: 60px;
   transition: all 0.5s;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.anim-container-btn{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 0 30px;
+  height: 280px;
 }
 
 .show-form-cities-container{
@@ -265,7 +270,7 @@ body{
 .form{
   background-color: #fff;
   border-radius: 10px;
-  transition: all 1s;
+  transition: all 0.5s;
   position: relative;
   z-index: 1;
   width: 400px;
@@ -475,10 +480,10 @@ body{
 .btn-city{
   background: #ef3124;
   text-align: center;
-  padding: 0 0;
+  padding: 5px 0;
   border-radius: 10px;
   color: #fff;
-  font-size: 0;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: bold;
   cursor: pointer;
@@ -488,6 +493,6 @@ body{
 }
 
 .btn-city-show{
-  padding: 5px 0;
-  font-size: 14px;
+  /* padding: 5px 0;
+  font-size: 14px; */
 }

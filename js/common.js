@@ -1,9 +1,12 @@
 const card = document.querySelectorAll('.card');
 const form = document.querySelector('.form');
 const closeForm = document.querySelector('.close-form');
-let radioCity = document.querySelectorAll('.radio-city');
-let radioTextCity = document.querySelectorAll('.redio-text')
-let titleForm = document.querySelector('.title-form')
+let outputCity = document.querySelector('.input-form_city');
+let btnCitys = document.querySelectorAll('.btn-city');
+let titleForm = document.querySelector('.title-form');
+let inpTel = document.getElementById('tel');
+let counter = 1;
+
 
 if (window.innerWidth <= 576) {
   for (let i = 0; i < card.length; i++) {
@@ -48,13 +51,30 @@ function showForm(title) {
 document.querySelector('.btn-close-form').addEventListener('click', closeFormShow);
 document.querySelector('.cross').addEventListener('click', closeFormShow);
 
-document.querySelector('.btn-form-cities').onclick = function (){
+outputCity.onclick = function (){
+  counter++;
+  console.log(counter)
   form.classList.add('form-show-citys');
   document.querySelector('.form-cities-container').classList.add('show-form-cities-container');
-  for (let i = 0; i < radioCity.length; i++) {
-      radioCity[i].classList.add('show-city-radio');
-      radioTextCity[i].classList.add('show-city-text');
+  for (let i = 0; i < btnCitys.length; i++) {
+      btnCitys[i].classList.add('btn-city-show');
+      btnCitys[i].onclick = function(){
+        if(this.innerText == 'Другое'){
+          alert('Пошёл нахуй')
+        }else{
+          outputCity.value = this.innerText;
+          closeBtnCity();
+        }
+      }
   }
+}
+
+function closeBtnCity(){
+    for (let i = 0; i < btnCitys.length; i++) {
+      btnCitys[i].classList.remove('btn-city-show');
+    }
+    form.classList.remove('form-show-citys');
+    document.querySelector('.form-cities-container').classList.remove('show-form-cities-container');
 }
 
 function closeFormShow (){
@@ -63,3 +83,14 @@ function closeFormShow (){
     closeForm.classList.remove('close-form-show');
   }, 500)
 }
+
+
+inpTel.addEventListener('focus', _ => {
+  if(!/^\+\d*$/.test(inpTel.value))
+    inpTel.value = '+7';
+});
+
+inpTel.addEventListener('keypress', e => {
+  if(!/\d/.test(e.key))
+    e.preventDefault();
+});

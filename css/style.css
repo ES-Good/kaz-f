@@ -94,16 +94,16 @@ body{
 }
 
 .form-cities-container{
-  background-color: #523e34;
+  background-color: #e6e6e6;
   width: 100%;
   height: 2px;
   position: absolute;
   left: 0;
   bottom: 60px;
-  transition: all 1s;
+  transition: all 0.5s;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   padding: 0 30px;
 }
@@ -461,26 +461,31 @@ body{
   margin-top: 20px;
 }
 
-label{
-  display: inline-block;
-  font-size: 0px;
-  margin: 3px 0;
+.city{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-form_city{
+  width: 60%;
+  margin: 10px;
+}
+
+.btn-city{
+  background: #ef3124;
+  text-align: center;
+  padding: 0 0;
+  font-size: 0;
+  border-radius: 10px;
   color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
   transition: all 1s;
 }
 
-label input{
-  width: 0px;
-  height: 0px;
-  margin-right: 5px;
-  transition: all 1s;
-}
-
-.show-city-text{
-  font-size: 22px;
-}
-
-.show-city-radio{
-  width: 15px;
-  height: 15px;
+.btn-city-show{
+  padding: 5px 0;
+  font-size: 14px;
 }

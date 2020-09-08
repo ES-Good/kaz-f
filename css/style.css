@@ -73,7 +73,7 @@ body{
 .input-form{
   display: block;
   width: 220px;
-  margin: 10px;
+  margin: 10px 35px 10px 10px;
   background: #ecebeb;
   padding: 10px;
   border: 1px solid #000;
@@ -465,12 +465,11 @@ body{
 .input-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .input-form_city{
   width: 220px;
-  margin: 10px;
 }
 
 .btn-city{

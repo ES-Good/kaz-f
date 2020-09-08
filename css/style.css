@@ -14,6 +14,10 @@
   font-family: "Montserrat-Light";
 }
 
+html{
+  height: 100%;
+}
+
 body{
   background-image: url(../img/background/background.jpeg);
   font-family: Montserrat-Light;
@@ -22,6 +26,7 @@ body{
   background-size: cover;
   background-color: #f4f2f2;
   position: relative;
+  min-height: 100%;
 }
 
 .header{

@@ -78,6 +78,7 @@ function closeBtnCity(){
 }
 
 function closeFormShow (){
+  closeBtnCity();
   form.style.top = '-50%';
   setTimeout(function () {
     closeForm.classList.remove('close-form-show');
